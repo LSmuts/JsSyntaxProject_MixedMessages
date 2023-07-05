@@ -1,10 +1,10 @@
-// Define the arrays
-const heroRace = ["Human", "Elf", "Dwarf", "Halfling"];
-const heroClass = ["Warrior", "Wizard", "Rogue", "Cleric"];
-const missionSetting = ["Dark Forest", "Ancient Ruins", "Underground Caverns", "Haunted Mansion"];
-const missionGoal = ["Retrieve an Artifact", "Rescue a Captive", "Defeat a Boss", "Solve a Mystery"];
+// Defined arrays to generate from
+const heroRace = ["Human", "Elf", "Dwarf", "Grung", "Owlin", "Thri-kreen", "Dragonborn", "Plasmoid", "Autognome"];
+const heroClass = ["Barbarian", "Paladin", "Rogue", "Ranger", "Druid", "Monk", "Bard", "Cleric", "Warlock"];
+const missionSetting = ["Forgotten Realms", "Spelljammer", "Eberron", "Exandria", "Greyhawk", "Ravenloft", "Dragonlands", "Strixhaven", "Blackmoor"];
+const missionGoal = ["Mummified Goblin Hand", "Lost Legionaire Insignia", "Enchanted Five-pointed Star", "Set of Bone Pipes", "Magical Silver Bell", "Vial of Dragon Blood", "Ancient Elven Arrow", "Dragon Talon Necklace", "Brass Rune Orb"];
 
-// Function to generate random selection from an array
+// Function to generate random selection from the arrays
 function getRandomElement(array) {
   const randomIndex = Math.floor(Math.random() * array.length);
   return array[randomIndex];
